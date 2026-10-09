@@ -16,28 +16,7 @@ namespace DragonBallValley
 
             helper.ConsoleCommands.Add("test_command", "A test command", (cmd, args) =>
             {
-                this.Monitor.Log("This is a test command", LogLevel.Info);
-                bool foundAny = false;
-
-                foreach(Item item in Game1.player.Items)
-                {
-                    if(item is MeleeWeapon weapon && weapon.itemId.Contains("ZSword"))
-                    {
-                        foundAny = true;
-                        this.Monitor.Log($"The current weapon is: {weapon.Name} and its ID is: {weapon.itemId}.", LogLevel.Info);
-                        weapon.appearance.Value = "(W)Freewillparty.DBVContent_ZSword_Rage";
-
-                        weapon.minDamage.Value = 75;
-                        weapon.maxDamage.Value = 98;
-
-                        this.Monitor.Log($"The weapon is currently appearing as {weapon.appearance.Value}", LogLevel.Info);
-                    }
-                }
-
-                if (!foundAny)
-                {
-                    this.Monitor.Log("No item containing 'ZSword' was found in your backpack.", LogLevel.Info);
-                }
+                
             });
         }
 
