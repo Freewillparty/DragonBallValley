@@ -1,20 +1,11 @@
 {
-	"Name": "Dragon Ball Valley",
-	"Author": "Freewillparty",
-	"Version": "0.0.1",
-	"Description": "Brings Dragon Ball into Stardew Valley.",
-	"UniqueID": "Freewillparty.DBV",
-	"EntryDll": "DragonBallValley.dll",
-	"MinimumApiVersion": "4.0.0",
-	"Dependencies": [
-		{
-			"UniqueID": "Pathoschild.ContentPatcher",
-			"IsRequired": true
-		},
-		{
-			"UniqueID": "Freewillparty.DBVContent",
-			"IsRequired": true
-		}
-	],
-	"UpdateKeys": []
+    "Name": "Dragon Ball Valley - Content",
+    "Author": "Freewillparty",
+    "Version": "0.1",
+    "Description": "All the content for Dragon Ball Valley",
+    "UniqueID": "Freewillparty.DBVContent",
+    "MinimumApiVersion": "4.0.0",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
 }

@@ -1,0 +1,48 @@
+{
+    "Format": "2.8.0",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/ZSword_Normal",
+            "FromFile": "Assets/Weapons/Swords/ZSword.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/ZSword_Rage",
+            "FromFile": "Assets/Weapons/Swords/ZSword_Rage.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModId}}_ZSword": {
+                    "Name": "{{ModID}}_ZSword",
+                    "DisplayName": "Z Sword",
+                    "Description": "Weapon passed down from master to student of the future...",
+                    "MinDamage": 50,
+                    "MaxDamage": 65,
+                    "Speed": 2,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 0,
+                    "CritChance": 0.05,
+                    "CritMultiplier": 5.0,
+                    "Knockback": 1,
+                    "Texture": "Mods/{{ModID}}/ZSword_Normal",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}_ZSword_Rage": {
+                    "Name": "{{ModID}}_ZSword_Rage",
+                    "DisplayName": "Sword of Hope",
+                    "Description": "Overflowing with ki in response to desperation.",
+                    "Type": 3,
+                    "MinDamage": 75,
+                    "MaxDamage": 98,
+                    "Texture": "Mods/{{ModID}}/ZSword_Rage",
+                    "SpriteIndex": 0
+                }
+            }
+        }
+    ]
+
+}
